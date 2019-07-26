@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Howdy!</title>
+    </head>
+    <body>
+        <h1>Functionality of the book explorer.</h1>
+        <p>The features and the workflow:
+● Registration: as a user, I want to connect to the service, which is available online,
+and register myself, using my email and specifying a password
+● CSV upload: after the registration, I will be redirected to a page where I can upload a
+CSV file;
+○ The CSV file will contain the following columns:
+■ Book title
+■ Book author
+■ Date published
+■ Unique identifier for the book (which one is not important)
+■ Publisher name
+
+● Validation: during the upload, the unique identifier for the book must be validated; if
+the identifier is not valid, the upload will be stopped and the user will be informed that
+there is an error with that field of the CSV
+● File handling: during the upload, the CSV file must be renamed to have a unique
+name (e.g. appending an UUID) and uploaded on Amazon S3; the name and the
+URL of the file will have to be saved in the application database
+● Content management: after the upload, I will be redirected to a page showing a
+table; the table will be a representation of the contents of the CSV file; the page title
+will show the name of the uploaded CSV
+○ When I am logged into the application, I will also be able to view all the CSV
+files I uploaded in the past, and their content</p>
+      <p><a href="/">Go back home</a></p>
+    </body>
+</html>
